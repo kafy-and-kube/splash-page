@@ -6,9 +6,8 @@ app.use(express.json());
 
 //serve main page of application
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../client/index.html'));
+  res.sendFile(path.join(__dirname, '../client/index.html'));
 });
-
 
 app.use((err, req, res, next) => {
   const defaultErr = {
