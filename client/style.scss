@@ -14,7 +14,7 @@ html {
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  padding: 0 20px;
+  padding: 0 40px;
   color: white;
   position: fixed;
   top: 0;
@@ -23,11 +23,20 @@ html {
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.9);
 
+  .navbar-left {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .navbar-right {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
   .navbar-button {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     border: none;
     font-size: 24px;
+    font-weight: 2;
     margin-left: 10px;
     cursor: pointer;
   }
