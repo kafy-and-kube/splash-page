@@ -126,9 +126,7 @@ html {
 }
 
 #features {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
   margin: 0 20%;
   gap: 1.5em;
   align-items: center;
@@ -142,18 +140,18 @@ html {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     transition: box-shadow 0.3s ease-in-out;
     text-align: center;
+    height: 40rem; 
+    width: 20rem; 
+
+    h1 {
+      background:rgba(109, 109, 109, 0.7)
+    }
 
     h3 {
-      margin: 1em 3em;
       font-size: 2rem; 
       font-weight: 2; 
+      background:rgba(109, 109, 109, 0.7)
     }
-    
-    img {
-      margin: 1em 0 0 0; 
-      height: 5rem;
-      width: 5rem; 
-    };
   }
 
   .feature-box:hover {
