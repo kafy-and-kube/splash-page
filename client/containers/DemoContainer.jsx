@@ -1,9 +1,10 @@
 import React from 'react';
+import iframe from 'react-iframe';
 
-export default function DemoContainer({src, alt}) {
+export default function DemoContainer() {
   return (
     <div id='image-wrapper'>
-        <img src={src} alt={alt}/>
+      <iframe src="https://app.supademo.com/embed/VySd_4xA0NT0nHIrCvRPu"></iframe>
     </div>
   );
 }
