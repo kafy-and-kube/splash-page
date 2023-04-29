@@ -5,14 +5,13 @@ import HookContainer from './containers/HookContainer.jsx';
 import DemoContainer from './containers/DemoContainer.jsx';
 import FeaturesContainer from './containers/FeaturesContainer.jsx'
 import FAQ from './containers/FAQ.jsx'
-import pika from '../assets/pika.jpg' 
 
 export default function App() {
   return (
     <div id='main'>
       <Navbar />
       <HookContainer />
-      <DemoContainer src={pika} alt='a demo of KoffeeTable app'/>
+      <DemoContainer />
       <FeaturesContainer />
       <FAQ />
     </div>

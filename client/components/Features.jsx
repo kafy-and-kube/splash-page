@@ -1,9 +1,11 @@
 import React from 'react';
 
-export default function Features({ text }) {
+export default function Features({ header, text, image }) {
   return (
     <div className='feature-box'>
-      <h1>{text}</h1>
+      <img src={image}></img>
+      <h1>{header}</h1>
+      <h3>{text}</h3>
     </div>
   );
 }
