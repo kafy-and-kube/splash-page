@@ -5,6 +5,7 @@ import HookContainer from './containers/HookContainer.jsx';
 import DemoContainer from './containers/DemoContainer.jsx';
 import FeaturesContainer from './containers/FeaturesContainer.jsx'
 import FAQ from './containers/FAQ.jsx'
+import Footer from './containers/Footer.jsx'
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <DemoContainer />
       <FeaturesContainer />
       <FAQ />
+      <Footer />
     </div>
   );
 }
