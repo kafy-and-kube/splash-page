@@ -188,12 +188,12 @@ html {
 }
 
 #footer {
-  background-color: rgb(34, 33, 36); 
+  background-color: rgb(34, 33, 36);
   margin: -1rem -1.5rem;
 
   .footer-container {
     display: grid;
-    column-gap: 1em; 
+    column-gap: 1em;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
 
@@ -219,15 +219,15 @@ html {
         gap: 1rem;
         background-color: rgb(34, 33, 36);
 
-        svg{
+        svg {
           height: 2rem;
           width: 2rem;
           background-color: rgb(34, 33, 36);
           transition: transform 0.2s ease-in-out;
         }
 
-        svg:hover{
-          cursor:pointer;
+        svg:hover {
+          cursor: pointer;
           transform: scale(1.1);
         }
       }
@@ -235,41 +235,66 @@ html {
 
     .company-footer {
       display: flex;
-      flex-direction: column; 
+      flex-direction: column;
       background-color: rgb(34, 33, 36);
-      h1{
+      h1 {
         background-color: rgb(34, 33, 36);
-        font-size: 1.2em; 
+        font-size: 1.2em;
+      }
+      h3 {
+        max-width: 20%;
+        display: inline-block;
+        background-color: rgb(34, 33, 36);
+        font-size: 1em;
+        font-weight: 2;
+        margin: 0.5em 0em;
+      }
+      h3:hover {
+        cursor: pointer;
+      }
+    }
+    
+    .contact-us {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(34, 33, 36);
+      h1 {
+        background-color: rgb(34, 33, 36);
+        font-size: 1.2em;
       }
       h3 {
         background-color: rgb(34, 33, 36);
-        font-size: 1em; 
+        font-size: 1em;
         font-weight: 2;
-        margin: 0.5em 0em; 
-      }
-      h3:hover{
-        cursor:pointer;
+        margin: 0.5em 0em;
       }
       button {
         height: 2.5rem;
         width: 12rem;
         border-radius: 10px;
         border: 0;
-        background-color:rgba(236, 236, 236, 0.63);
+        background-color: rgba(236, 236, 236, 0.63);
         color: rgb(34, 33, 36);
-        font-size:0.8em;
+        font-size: 0.8em;
       }
-      button:hover{
-        cursor:pointer;
-        background-color:rgba(236, 236, 236, 0.76);
+      button:hover {
+        cursor: pointer;
+        background-color: rgba(236, 236, 236, 0.76);
       }
     }
   }
 }
 
 #trademark {
-  padding: 1em; 
-  font-size: 1em; 
+  padding: 1em;
+  font-size: 1em;
   background-color: rgb(34, 33, 36);
   text-align: center;
+}
+
+.about-us {
+  min-height:1000px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
