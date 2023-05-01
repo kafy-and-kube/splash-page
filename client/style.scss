@@ -181,17 +181,15 @@ html {
   margin: -1rem -1.5rem;
 
   .footer-container {
-    border: 1px solid white;
     display: grid;
     column-gap: 1em; 
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
 
     background-color: rgb(34, 33, 36);
-    padding: 0 20%;
+    padding: 0 25%;
 
     #koffee-table-footer {
-      border: 1px solid white;
       background-color: rgb(34, 33, 36);
 
       h1 {
@@ -224,8 +222,7 @@ html {
       }
     }
 
-    #company-footer {
-      border: 1px solid white;
+    .company-footer {
       display: flex;
       flex-direction: column; 
       background-color: rgb(34, 33, 36);
@@ -241,6 +238,19 @@ html {
       }
       h3:hover{
         cursor:pointer;
+      }
+      button {
+        height: 2.5rem;
+        width: 12rem;
+        border-radius: 10px;
+        border: 0;
+        background-color:rgba(236, 236, 236, 0.63);
+        color: rgb(34, 33, 36);
+        font-size:0.8em;
+      }
+      button:hover{
+        cursor:pointer;
+        background-color:rgba(236, 236, 236, 0.76);
       }
     }
   }

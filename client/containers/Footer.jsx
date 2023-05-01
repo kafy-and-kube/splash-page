@@ -13,17 +13,16 @@ export default function Footer() {
             <svg fill="#ffffff" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>medium</title> <path d="M30.955 16c0 3.951-0.661 7.166-1.483 7.166s-1.483-3.215-1.483-7.166 0.661-7.166 1.483-7.166 1.483 3.215 1.483 7.166zM27.167 16c0 4.412-1.882 8.001-4.212 8.001s-4.225-3.589-4.225-8.001 1.894-8.001 4.225-8.001 4.212 3.589 4.212 8.001zM17.919 16c-0.014 4.67-3.803 8.45-8.475 8.45-4.68 0-8.475-3.794-8.475-8.475s3.794-8.475 8.475-8.475c2.351 0 4.479 0.957 6.014 2.504l0.001 0.001c1.521 1.531 2.46 3.641 2.46 5.97 0 0.009 0 0.018-0 0.026v-0.001z"></path> </g></svg>
           </div>
         </div>
-        <div id='company-footer'>
+        <div className='company-footer'>
           <h1>Company</h1>
           <h3>Our Team</h3>
           <h3>OSLabs</h3>
           <h3></h3>
         </div>
-        <div id='company-footer'>
-          <h1>Company</h1>
-          <h3>Our Team</h3>
-          <h3>OSLabs</h3>
-          <h3></h3>
+        <div className='company-footer'>
+          <h1>Help</h1>
+          <h3>Need to contact us?</h3>
+          <button>support@koffeetable.com</button>
         </div>
       </div>
       <div id='trademark'>© 2023 KoffeeTable. All rights reserved.</div>
