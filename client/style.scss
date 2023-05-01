@@ -58,13 +58,16 @@ html {
 }
 
 #hook {
-  margin: 10rem 30rem;
+  margin: 4% 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   font-size: 2rem;
 
+  h1 {
+    margin: 2rem;
+  }
   h2 {
     font-weight: 2;
   }
@@ -112,11 +115,13 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: hidden;
 
   iframe {
     width: 90%;
-    min-height: 66rem;
-    border-radius: 40px;
+    min-height: 53rem;
+    border-radius: 20px;
+    overflow-y: hidden;
   }
 }
 
@@ -138,7 +143,7 @@ html {
 
 #features {
   display: flex;
-  margin: 0 20%;
+  margin: 0 15%;
   gap: 1.5em;
   align-items: center;
   justify-content: center;
@@ -151,17 +156,17 @@ html {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     transition: box-shadow 0.3s ease-in-out;
     text-align: center;
-    height: 40rem; 
-    width: 20rem; 
+    height: 40rem;
+    width: 20rem;
 
     h1 {
-      background:rgba(109, 109, 109, 0.7)
+      background: rgba(109, 109, 109, 0.7);
     }
 
     h3 {
-      font-size: 2rem; 
-      font-weight: 2; 
-      background:rgba(109, 109, 109, 0.7)
+      font-size: 2rem;
+      font-weight: 2;
+      background: rgba(109, 109, 109, 0.7);
     }
   }
 
@@ -180,4 +185,91 @@ html {
   h1 {
     font-size: 3.5rem;
   }
+}
+
+#footer {
+  background-color: rgb(34, 33, 36); 
+  margin: -1rem -1.5rem;
+
+  .footer-container {
+    display: grid;
+    column-gap: 1em; 
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+
+    background-color: rgb(34, 33, 36);
+    padding: 0 25%;
+
+    #koffee-table-footer {
+      background-color: rgb(34, 33, 36);
+
+      h1 {
+        font-size: 1.5em;
+        background-color: rgb(34, 33, 36);
+      }
+
+      h2 {
+        font-size: 1.2em;
+        background-color: rgb(34, 33, 36);
+        font-weight: 2;
+      }
+
+      .logos {
+        display: flex;
+        gap: 1rem;
+        background-color: rgb(34, 33, 36);
+
+        svg{
+          height: 2rem;
+          width: 2rem;
+          background-color: rgb(34, 33, 36);
+          transition: transform 0.2s ease-in-out;
+        }
+
+        svg:hover{
+          cursor:pointer;
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .company-footer {
+      display: flex;
+      flex-direction: column; 
+      background-color: rgb(34, 33, 36);
+      h1{
+        background-color: rgb(34, 33, 36);
+        font-size: 1.2em; 
+      }
+      h3 {
+        background-color: rgb(34, 33, 36);
+        font-size: 1em; 
+        font-weight: 2;
+        margin: 0.5em 0em; 
+      }
+      h3:hover{
+        cursor:pointer;
+      }
+      button {
+        height: 2.5rem;
+        width: 12rem;
+        border-radius: 10px;
+        border: 0;
+        background-color:rgba(236, 236, 236, 0.63);
+        color: rgb(34, 33, 36);
+        font-size:0.8em;
+      }
+      button:hover{
+        cursor:pointer;
+        background-color:rgba(236, 236, 236, 0.76);
+      }
+    }
+  }
+}
+
+#trademark {
+  padding: 1em; 
+  font-size: 1em; 
+  background-color: rgb(34, 33, 36);
+  text-align: center;
 }
