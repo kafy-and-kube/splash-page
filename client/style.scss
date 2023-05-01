@@ -12,9 +12,9 @@ html {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   height: 60px;
-  padding: 0 40px;
+  padding: 10px 40px;
   color: white;
   position: fixed;
   top: 0;
@@ -28,22 +28,33 @@ html {
   }
 
   .navbar-right {
+    display: flex;
     background-color: rgba(0, 0, 0, 0);
   }
 
   .navbar-button {
+    display: flex;
     background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
     color: white;
     border: none;
     font-size: 24px;
     font-weight: 2;
-    margin-left: 10px;
     cursor: pointer;
   }
 
   .navbar-button:hover {
     text-decoration: underline;
   }
+}
+
+#download-button {
+  margin-left: 30px;
+}
+
+#logo {
+  width: 10%;
+  margin-top: 10px;
 }
 
 #hook {

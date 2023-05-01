@@ -48,7 +48,7 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
-        test: /\.(jpg|png|gif)$/i,
+        test: /\.(jpg|png|gif|svg)$/i,
         use: [
           {
             loader: 'file-loader',
