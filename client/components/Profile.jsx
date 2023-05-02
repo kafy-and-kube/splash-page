@@ -3,12 +3,13 @@ import React from 'react';
 export default function Profile({ photo, name, github, linkedIn }) {
   return (
     <div className='profile'>
+      <img className='headshots' src={photo}></img>
       <h1>{name}</h1>
-      <div>
+      <div className='svg-icons'>
         <svg
-          id='github'
+          id='github-icon'
           onClick={() => {
-            window.open('https://github.com/oslabs-beta/Koffee-Table');
+            window.open(github);
           }}
           width='2.5rem'
           height='2.5rem'
@@ -33,6 +34,9 @@ export default function Profile({ photo, name, github, linkedIn }) {
         </svg>
         <svg
           id='linkedin'
+          onClick={() => {
+            window.open(linkedIn);
+          }}
           width='2.7rem'
           height='2.7rem'
           viewBox='0 0 24 24'
