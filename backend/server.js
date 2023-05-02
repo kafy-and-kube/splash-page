@@ -9,6 +9,18 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/index.html'));
 });
 
+if (process.env.NODE_ENV === 'production') {
+  app.use('/build', express.static(path.resolve(__dirname, '../build')));
+
+  app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../build', 'index.html'), (err) => {
+      if (err) {
+        console.log(err);
+      }
+    });
+  });
+}
+
 app.use((err, req, res, next) => {
   const defaultErr = {
     log: 'Express error handler caught unknown middleware error',

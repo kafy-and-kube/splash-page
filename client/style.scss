@@ -9,12 +9,26 @@
 
 html {
   margin: 0 1em;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  #html {
+    margin: 0;
+  }
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  align-items: center;
   height: 60px;
   padding: 10px 40px;
   color: white;
@@ -116,23 +130,21 @@ html {
 #image-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
-  overflow-y: hidden;
+  height: auto;
 
-  iframe {
+  #i-frame {
+    height: 53rem;
     width: 90%;
-    min-height: 53rem;
     border-radius: 20px;
-    overflow-y: hidden;
   }
 }
 
 #features-wrapper {
   margin: 5em;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 
   h1 {
     font-size: 3.5rem;
@@ -178,8 +190,12 @@ html {
 }
 
 .FAQ-container {
-  margin: 5em;
-  padding: 0em 15vw; 
+
+  .faq-title {
+    text-align: center;
+  }
+  margin: 5em 0em;
+  padding: 0em 15vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -188,7 +204,8 @@ html {
     font-size: 3.5rem;
   }
 
-  p, li {
+  p,
+  li {
     font-size: 1.5rem;
     font-weight: 300;
     line-height: 1.75rem;
@@ -201,12 +218,12 @@ html {
 }
 
 #footer {
-  background-color: rgb(34, 33, 36); 
+  background-color: rgb(34, 33, 36);
   margin: -1rem -1.5rem;
 
   .footer-container {
     display: grid;
-    column-gap: 1em; 
+    column-gap: 1em;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
 
@@ -232,15 +249,15 @@ html {
         gap: 1rem;
         background-color: rgb(34, 33, 36);
 
-        svg{
+        svg {
           height: 2rem;
           width: 2rem;
           background-color: rgb(34, 33, 36);
           transition: transform 0.2s ease-in-out;
         }
 
-        svg:hover{
-          cursor:pointer;
+        svg:hover {
+          cursor: pointer;
           transform: scale(1.1);
         }
       }
@@ -248,41 +265,165 @@ html {
 
     .company-footer {
       display: flex;
-      flex-direction: column; 
+      flex-direction: column;
       background-color: rgb(34, 33, 36);
-      h1{
+      h1 {
         background-color: rgb(34, 33, 36);
-        font-size: 1.2em; 
+        font-size: 1.2em;
+      }
+      h3 {
+        max-width: 20%;
+        display: inline-block;
+        background-color: rgb(34, 33, 36);
+        font-size: 1em;
+        font-weight: 2;
+        margin: 0.5em 0em;
+      }
+      h3:hover {
+        cursor: pointer;
+      }
+    }
+
+    .contact-us {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(34, 33, 36);
+      h1 {
+        background-color: rgb(34, 33, 36);
+        font-size: 1.2em;
       }
       h3 {
         background-color: rgb(34, 33, 36);
-        font-size: 1em; 
+        font-size: 1em;
         font-weight: 2;
-        margin: 0.5em 0em; 
-      }
-      h3:hover{
-        cursor:pointer;
+        margin: 0.5em 0em;
       }
       button {
         height: 2.5rem;
         width: 12rem;
         border-radius: 10px;
         border: 0;
-        background-color:rgba(236, 236, 236, 0.63);
+        background-color: rgba(236, 236, 236, 0.63);
         color: rgb(34, 33, 36);
-        font-size:0.8em;
+        font-size: 0.8em;
       }
-      button:hover{
-        cursor:pointer;
-        background-color:rgba(236, 236, 236, 0.76);
+      button:hover {
+        cursor: pointer;
+        background-color: rgba(236, 236, 236, 0.76);
       }
     }
   }
 }
 
 #trademark {
-  padding: 1em; 
-  font-size: 1em; 
+  padding: 1em;
+  font-size: 1em;
   background-color: rgb(34, 33, 36);
   text-align: center;
+}
+
+.about-us {
+  margin: 6rem;
+  height: 80vh;
+  display: flex;
+  column-gap: 3em;
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20em;
+    height: 100%;
+  }
+}
+
+//media queries
+@media screen and (max-width: 1200px) {
+  #image-wrapper {
+    display: flex;
+    justify-content: center;
+  
+    #i-frame {
+      height: 34rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #main {
+    margin: 3rem 0;
+  }
+  #hook {
+    h1 {
+      font-size: 50px;
+    }
+  }
+  #features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .feature-box {
+      width: 15rem;
+    }
+  }
+
+  #image-wrapper {
+    display: flex;
+    justify-content: center;
+  
+    #i-frame {
+      height: 20rem;
+    }
+  }
+
+  #footer {
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #main {
+    margin: 3rem 0;
+  }
+
+  #hook {
+    h1 {
+      font-size: 35px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #features {
+    .feature-box {
+      width: 15rem;
+    }
+  }
+
+  #image-wrapper {
+    #i-frame {
+      height: 14em;
+    }
+  }
+  
+  #footer {
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }

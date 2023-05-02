@@ -8,14 +8,8 @@ module.exports = {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
   },
-  resolve: {
-    modules: [path.join(__dirname, 'src'), 'node_modules'],
-    alias: {
-      react: path.join(__dirname, 'node_modules', 'react'),
-    },
-    extensions: ['.tsx', '.ts', '.js'],
-  },
   devServer: {
+    historyApiFallback: true,
     proxy: {
       '/**': {
         target: 'http://localhost:3000/',
@@ -25,7 +19,6 @@ module.exports = {
         open: true,
       },
     },
-    historyApiFallback: true,
   },
   module: {
     rules: [
