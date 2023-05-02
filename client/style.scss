@@ -18,10 +18,17 @@ html::-webkit-scrollbar {
   display: none;
 }
 
+@media screen and (max-width: 480px) {
+  #html {
+    margin: 0;
+  }
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  align-items: center;
   height: 60px;
   padding: 10px 40px;
   color: white;
@@ -135,9 +142,9 @@ html::-webkit-scrollbar {
 #features-wrapper {
   margin: 5em;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 
   h1 {
     font-size: 3.5rem;
@@ -183,8 +190,12 @@ html::-webkit-scrollbar {
 }
 
 .FAQ-container {
-  margin: 5em;
-  padding: 0em 15vw; 
+
+  .faq-title {
+    text-align: center;
+  }
+  margin: 5em 0em;
+  padding: 0em 15vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -193,7 +204,8 @@ html::-webkit-scrollbar {
     font-size: 3.5rem;
   }
 
-  p, li {
+  p,
+  li {
     font-size: 1.5rem;
     font-weight: 300;
     line-height: 1.75rem;
@@ -317,12 +329,101 @@ html::-webkit-scrollbar {
   column-gap: 3em;
 
   .profile {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 20em; 
+    width: 20em;
     height: 100%;
   }
+}
 
+//media queries
+@media screen and (max-width: 1200px) {
+  #image-wrapper {
+    display: flex;
+    justify-content: center;
+  
+    #i-frame {
+      height: 34rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #main {
+    margin: 3rem 0;
+  }
+  #hook {
+    h1 {
+      font-size: 50px;
+    }
+  }
+  #features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .feature-box {
+      width: 15rem;
+    }
+  }
+
+  #image-wrapper {
+    display: flex;
+    justify-content: center;
+  
+    #i-frame {
+      height: 20rem;
+    }
+  }
+
+  #footer {
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #main {
+    margin: 3rem 0;
+  }
+
+  #hook {
+    h1 {
+      font-size: 35px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #features {
+    .feature-box {
+      width: 15rem;
+    }
+  }
+
+  #image-wrapper {
+    #i-frame {
+      height: 14em;
+    }
+  }
+  
+  #footer {
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
