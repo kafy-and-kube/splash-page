@@ -7,6 +7,13 @@
 
 html {
   margin: 0 1em;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 .navbar {
@@ -114,14 +121,12 @@ html {
 #image-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
-  overflow-y: hidden;
+  height: auto;
 
-  iframe {
+  #i-frame {
+    height: 53rem;
     width: 90%;
-    min-height: 53rem;
     border-radius: 20px;
-    overflow-y: hidden;
   }
 }
 
@@ -253,7 +258,7 @@ html {
         cursor: pointer;
       }
     }
-    
+
     .contact-us {
       display: flex;
       flex-direction: column;
@@ -293,8 +298,18 @@ html {
 }
 
 .about-us {
-  min-height:1000px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
+  margin: 6rem;
+  height: 80vh;
+  display: flex;
+  column-gap: 3em;
+
+  .profile {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20em; 
+    height: 100%;
+  }
+
 }
