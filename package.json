@@ -40,6 +40,7 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "nodemon": "^2.0.7",
+    "sass": "^1.62.1",
     "sass-loader": "^13.2.1",
     "style-loader": "^3.3.2",
     "webpack-cli": "^4.8.0",

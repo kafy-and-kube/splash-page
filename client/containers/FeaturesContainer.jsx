@@ -8,7 +8,7 @@ import koffeetable4 from  '../../assets/koffeetable4.jpg'
 
 export default function FeaturesContainer() {
   const header = ["Free & Open Source", 'View Key Metrics', 'Easy to Integrate', 'Lightweight' ]
-  const text = ["In collaboration with OSLabs", 'Never worry about under-replicated partitions again', 'All you need is to have your Kafka clusters and Docker running', 'Low CPU usage and minimal memory consumption' ]
+  const text = ["In collaboration with OSLabs", 'Never worry about offline partitions going unnoticed', 'All you need is to have your Kafka clusters and Docker running', 'Low CPU usage and minimal memory consumption' ]
   const images = [koffeetable1, koffeetable2, koffeetable3, koffeetable4]
   const features = []
   for (let i = 0; i < 4; i++) {
