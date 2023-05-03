@@ -127,14 +127,12 @@ html::-webkit-scrollbar {
   font-size: 26px;
 }
 
-#image-wrapper {
+#iframe-wrapper {
   display: flex;
   justify-content: center;
-  height: auto;
+  align-items: center;
 
   #i-frame {
-    height: 53rem;
-    width: 90%;
     border-radius: 20px;
   }
 }
@@ -322,7 +320,7 @@ html::-webkit-scrollbar {
 }
 
 .about-us {
-  margin: 6rem;
+  margin: 15% 0;
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -334,29 +332,39 @@ html::-webkit-scrollbar {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 20em;
-    height: 100%;
+    flex: 0 0 16%;
+    height: 60%;
 
-    svg:hover{
-      cursor:pointer;
+    svg:hover {
+      cursor: pointer;
     }
 
     .headshots {
       height: 320px;
-      width: 320px; 
+      width: 320px;
     }
   }
 }
 
 //media queries
-@media screen and (max-width: 1200px) {
-  #image-wrapper {
+@media screen and (max-width: 1900px) {
+  .about-us {
+    margin: 10vh;
+    display: grid;
+    row-gap: 5vh;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1478px) {
+  .about-us {
+    margin: 15% 0;
+    height: 80vh;
     display: flex;
     justify-content: center;
-
-    #i-frame {
-      height: 34rem;
-    }
+    align-items: center;
+    column-gap: 3em;
+    flex-wrap: wrap;
   }
 }
 
@@ -377,15 +385,6 @@ html::-webkit-scrollbar {
 
     .feature-box {
       width: 15rem;
-    }
-  }
-
-  #image-wrapper {
-    display: flex;
-    justify-content: center;
-
-    #i-frame {
-      height: 20rem;
     }
   }
 
@@ -421,12 +420,6 @@ html::-webkit-scrollbar {
   #features {
     .feature-box {
       width: 15rem;
-    }
-  }
-
-  #image-wrapper {
-    #i-frame {
-      height: 14em;
     }
   }
 

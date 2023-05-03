@@ -7,10 +7,10 @@ import Matt from '../../assets/matt(1).png'
 import Jonas from '../../assets/jonas.png'
 
 export default function AboutUs() {
-  const names = ['Gavin', 'Jonas', 'Joe', 'Jonathan', 'Matthew']
+  const names = ['Gavin Briggs-Perez', 'Jonas Gantar', 'Joe Ostrow', 'Jonathan Valdes', 'Matthew Lee']
   const photos= [Gavin, Jonas, Joe, Jonathan, Matt]
   const githubs = ['https://github.com/gavinBP', 'https://github.com/TJonasT', 'https://github.com/JSTRO', 'https://github.com/jonathanvaldes57', 'https://github.com/Mattholee']
-  const linkedIns = ['https://www.linkedin.com/in/gavin-briggs-perez-163330a5/', 'https://www.linkedin.com/in/jonas-gantar/', 'https://www.linkedin.com/in/joseph-ostrow/', 'https://www.linkedin.com/in/jonathan-valdes57/', 'https://www.linkedin.com/in/mattyhlee/']
+  const linkedIns = ['https://www.linkedin.com/in/gavinBP/', 'https://www.linkedin.com/in/jonas-gantar/', 'https://www.linkedin.com/in/joseph-ostrow/', 'https://www.linkedin.com/in/jonathan-valdes57/', 'https://www.linkedin.com/in/mattyhlee/']
 
   const profiles = []
   for (let i = 0; i < names.length; i++) {

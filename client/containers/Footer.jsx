@@ -81,7 +81,7 @@ export default function Footer() {
         </div>
         <div className='company-footer'>
           <h1>Company</h1>
-          <Link style={{'background-color':'rgb(34, 33, 36)', 'text-decoration': 'none', 'max-width': '25%'}} to='/aboutus'>
+          <Link style={{'background-color':'rgb(34, 33, 36)', 'text-decoration': 'none'}} to='/aboutus'>
             Our Team
           </Link>
           <h3
