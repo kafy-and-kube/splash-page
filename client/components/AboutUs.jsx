@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Profile from './Profile.jsx';
 import Gavin from '../../assets/gavin.png'
 import Joe from '../../assets/joe.png'
@@ -7,6 +7,9 @@ import Matt from '../../assets/matt(1).png'
 import Jonas from '../../assets/jonas.png'
 
 export default function AboutUs() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  })
   const names = ['Gavin Briggs-Perez', 'Jonas Gantar', 'Joe Ostrow', 'Jonathan Valdes', 'Matthew Lee']
   const photos= [Gavin, Jonas, Joe, Jonathan, Matt]
   const githubs = ['https://github.com/gavinBP', 'https://github.com/TJonasT', 'https://github.com/JSTRO', 'https://github.com/jonathanvaldes57', 'https://github.com/Mattholee']

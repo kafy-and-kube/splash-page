@@ -63,7 +63,7 @@ html::-webkit-scrollbar {
 }
 
 #logo {
-  width: 10%;
+  width: 13vh;
   margin-top: 10px;
 }
 
@@ -318,7 +318,6 @@ html::-webkit-scrollbar {
 }
 
 .about-us {
-  border: 1px solid white; 
   margin: 80px 0;
   width:100%; 
   display: flex;
@@ -327,7 +326,6 @@ html::-webkit-scrollbar {
   column-gap: 2em;
 
   .profile {
-    border: 1px solid white; 
     display: flex;
     flex-direction: column;
     justify-content: center;
