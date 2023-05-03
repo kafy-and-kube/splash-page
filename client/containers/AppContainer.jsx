@@ -7,7 +7,7 @@ import Footer from './Footer.jsx';
 
 export default function AppContainer() {
   return (
-    <div>
+    <div id='app'>
       <HookContainer />
       <DemoContainer />
       <FeaturesContainer />
