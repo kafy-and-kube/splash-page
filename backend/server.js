@@ -5,20 +5,20 @@ const userRouter = require('./database/userRouter');
 const app = express();
 app.use(express.json());
 
-//serve main page of application
-// app.get('/', (req, res) => {console.log("here1")
-//   res.sendFile(path.join(__dirname, '../client/index.html'));
-// });
+// serve main page of application
+app.get('/', (req, res) => {console.log("here1")
+  res.sendFile(path.join(__dirname, '../client/index.html'));
+});
 
-// app.use('/user', userRouter);
+app.use('/user', userRouter);
 
 
-// if (process.env.NODE_ENV === 'production') {
-//   app.use('/build', express.static(path.resolve(__dirname, '../build')));
-// }
-// app.get('/*', (req, res) => {
-//   res.redirect('/')
-// })
+if (process.env.NODE_ENV === 'production') {
+  app.use('/build', express.static(path.resolve(__dirname, '../build')));
+}
+app.get('/*', (req, res) => {
+  res.redirect('/')
+})
 
 
 app.use((err, req, res, next) => {
