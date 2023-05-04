@@ -10,6 +10,9 @@ app.get('/', (req, res) => {console.log("here1")
   res.sendFile(path.join(__dirname, '../client/index.html'));
 });
 
+app.get('/here', (req, res) => {console.log("here1")
+  res.json("here")
+});
 app.use('/user', userRouter);
 
 
