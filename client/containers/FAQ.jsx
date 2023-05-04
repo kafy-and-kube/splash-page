@@ -5,7 +5,7 @@ export default function FAQ() {
   return (
     <div className="FAQ-container">
       <div className="faq-title">
-        <h1>Frequently Asked Questions:</h1>
+        <h1>Frequently Asked Questions</h1>
       </div>
       <Collapsible className='collapsible-tab'
         trigger="Why should I choose KoffeeTable?"
