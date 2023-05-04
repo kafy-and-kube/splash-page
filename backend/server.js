@@ -11,7 +11,7 @@ app.get('/', (req, res) => {console.log("here1")
 });
 
 app.get('/here', (req, res) => {console.log("here1")
-  res.json("here)
+  res.json("here")
 });
 app.use('/user', userRouter);
 
