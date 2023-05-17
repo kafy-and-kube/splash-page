@@ -51,12 +51,16 @@ html::-webkit-scrollbar {
   .navbar-button {
     display: flex;
     background-color: rgba(0, 0, 0, 0);
-    padding: 0px;
+    padding: 1em;
     color: white;
     border: none;
     font-size: 24px;
     font-weight: 2;
     cursor: pointer;
+  }
+
+  .aboutus {
+    text-decoration: none;
   }
 
   .navbar-button:hover {
