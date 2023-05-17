@@ -7,7 +7,7 @@ export default function FAQ() {
       <div className="faq-title">
         <h1>Frequently Asked Questions</h1>
       </div>
-      <Collapsible
+      <Collapsible className='collapsible-tab'
         trigger="Why should I choose KoffeeTable?"
         triggerTagName="h2"
       >
@@ -21,7 +21,7 @@ export default function FAQ() {
           click of a button.
         </p>
       </Collapsible>
-      <Collapsible
+      <Collapsible className='collapsible-tab'
         trigger="Which specific metrics does KoffeeTable track and why?"
         triggerTagName="h2"
       >
@@ -40,7 +40,7 @@ export default function FAQ() {
           risk of losing valuable data.
         </p>
       </Collapsible>
-      <Collapsible
+      <Collapsible className='collapsible-tab'
         trigger="How does KoffeeTable calculate these metrics?"
         triggerTagName="h2"
       >
@@ -52,7 +52,7 @@ export default function FAQ() {
           the number of messages added to a partition over a 3 second interval.
         </p>
       </Collapsible>
-      <Collapsible
+      <Collapsible className='collapsible-tab'
         trigger="What tech stack does KoffeeTable use?"
         triggerTagName="h2"
       >

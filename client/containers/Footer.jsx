@@ -59,6 +59,9 @@ export default function Footer() {
             </svg>
             <svg
               id='medium'
+              onClick={() => {
+                window.open('https://medium.com/@koffeetable/keep-an-eye-on-your-kafka-metrics-with-a955a1b78a5f');
+              }}
               fill='#ffffff'
               viewBox='0 0 32 32'
               version='1.1'

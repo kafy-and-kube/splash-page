@@ -1,25 +1,25 @@
 const express = require('express');
 const path = require('path');
+const userRouter = require('./database/userRouter');
 
 const app = express();
 app.use(express.json());
 
-//serve main page of application
-app.get('/', (req, res) => {
+// serve main page of application
+app.get('/', (req, res) => {console.log("here1")
   res.sendFile(path.join(__dirname, '../client/index.html'));
 });
 
+app.use('/user', userRouter);
+
+
 if (process.env.NODE_ENV === 'production') {
   app.use('/build', express.static(path.resolve(__dirname, '../build')));
-
-  app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../build', 'index.html'), (err) => {
-      if (err) {
-        console.log(err);
-      }
-    });
-  });
 }
+app.get('/*', (req, res) => {
+  res.redirect('/')
+})
+
 
 app.use((err, req, res, next) => {
   const defaultErr = {

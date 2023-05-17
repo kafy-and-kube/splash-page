@@ -19,7 +19,10 @@
   },
   "homepage": "https://github.com/kafy-and-kube/splash-page#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "mongoose": "^7.1.0",
     "path": "^0.12.7",
     "react": "^18.2.0",
     "react-collapsible": "^2.10.0",
