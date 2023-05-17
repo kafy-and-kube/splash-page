@@ -13,6 +13,17 @@ export default function Navbar() {
         </Link>
       </div>
       <div className='navbar-right'>
+        <Link className='navbar-button aboutus' to='/aboutus'>
+          Our Team
+        </Link>
+        <button
+          onClick={() => {
+            window.open('https://www.linkedin.com/company/koffeetable/?viewAsMember=true');
+          }}
+          className='navbar-button'
+        >
+          LinkedIn
+        </button>
         <button
           onClick={() => {
             window.open('https://github.com/oslabs-beta/Koffee-Table');
@@ -20,9 +31,6 @@ export default function Navbar() {
           className='navbar-button'
         >
           Docs
-        </button>
-        <button id='download-button' className='navbar-button'>
-          Download
         </button>
       </div>
     </nav>
